@@ -1,0 +1,61 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; }
+h3 { padding: 20px; }
+button { padding: 10px; }
+form {  }
+
+
+div.room-name {
+  padding: 10px;
+  text-align: center;
+}
+
+div.message-area {
+  
+}
+
+div.input-chat {
+  background: #000;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+  button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+}
+
+/* Conversation-item */
+
+div.conv-item {
+  border-top: 1px solid #eee;
+  padding: 5px 20px;
+  cursor:pointer;
+}
+
+div.conv-item a {
+  text-decoration:none;
+}
+
+div.conv-item .sender{
+  font-size: 10pt;
+  color:#aaa;
+}
+
+div.conv-item .msgbody{
+  font-size: 12pt;
+  padding: 3px 0;
+}
+
+div.conv-item .datetime{
+  font-size: 8pt;
+  color:#aaa;
+}
+
+div.conv-item:hover{
+  background-color:#f8f8f8;
+}
+
+div.conv-item:last-child {
+  border-bottom: 1px solid #eee;
+}
