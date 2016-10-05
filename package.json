@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch server.js server.js"
+    "start": "nodemon --watch server.js server.js",
+    "test": "mocha-webpack --require app/test/configureJSDom.js --webpack-config webpack.config.test.js \"app/*.test.js\"",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
@@ -29,11 +31,19 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.25.0",
+    "enzyme": "^2.4.1",
+    "expect": "^1.20.2",
+    "mocha": "^3.1.0",
+    "mocha-webpack": "^0.6.0",
+    "nock": "^8.0.0",
     "postcss-loader": "^0.13.0",
     "precss": "^1.4.0",
+    "react-addons-test-utils": "^15.3.2",
+    "redux-mock-store": "^1.2.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.12.2"
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-node-externals": "^1.4.3"
   }
 }
